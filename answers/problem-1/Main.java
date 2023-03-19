@@ -5,6 +5,7 @@ class Main {
     static Scanner scan = new Scanner(System.in);
     static boolean IsLucky(int number)
     {
+        if(number <= 0)return false;
         while(number > 0)
         {
             if(number%10 != 4 && number%10 != 7)
